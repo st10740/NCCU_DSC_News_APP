@@ -1,36 +1,12 @@
-# PopularNews
-News application using the API from https://newsapi.org/
+# NCCU DSC News App
 
-API News Is JSON API for live news and blog articles from the media.
-This project uses retrofit2 as HTTP Clent - 
-Retrofit is a REST Client for Java and Android. Its use is very easy.
+This project is modified from PopularNews (https://github.com/haerulmuttaqin/PopularNews),
+which is an Android project developed in Java, for developing practice purpose.
+We add two functionalities to provide better user experience:
 
-• News API
-
-• Retrofit
-
-• Glide for the Image Network
-
-• Material design
-
-• Prettytime for Convert Java Date() objects in just “a few minutes!”
+- Sort by news category, so people can watch the news as they like conveniently.
+- Classify by country where the news is broadcast, which can also help people learn language by watching the correspond news.
 
 # Screenshot
-![Alt text](https://github.com/haerulmuttaqin/PopularNews/blob/master/Screenshot-NewsApp-Copy.png?raw=true "News API")
+![image info](./scrrenshot.jpg)
 
-# Clone this project
-
-Clone with HTTPS
-https://github.com/haerulmuttaqin/PopularNews.git
-
-Clone with SSH
-git@github.com:haerulmuttaqin/PopularNews.git
-
-Get your API key
-https://newsapi.org/register
-
->Replace your API key
-```java
-public static final String API_KEY = "your secret api key";
-
-```

@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Popular News</string>
+    <string name="app_name">NCCU DSC News App</string>
+    <string name="country1">Taiwan</string>
+    <string name="country2">United State</string>
+    <string name="country3">United Kingdom</string>
+    <string name="country4">Japan</string>
+    <string name="country5">Korea</string>
+    <string name="category1">general</string>
+    <string name="category2">business</string>
+    <string name="category3">entertainment</string>
+    <string name="category4">health</string>
+    <string name="category5">science</string>
+    <string name="category6">sport</string>
+    <string name="category7">technology</string>
 </resources>

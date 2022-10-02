@@ -7,48 +7,151 @@
     tools:context=".MainActivity"
     android:background="@color/colorBackground">
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/swipe_refresh_layout"
+    <!--android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/notoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    </android.support.design.widget.AppBarLayout-->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorBackground">
+        android:orientation="vertical">
 
-        <android.support.v4.widget.NestedScrollView
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp"
+            android:background="@color/colorBackground"
+            android:scrollbars="none">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/topheadelines"
-                    android:textColor="@color/colorTextTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Top Headlines"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="17sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="10dp"
-                    android:visibility="invisible"/>
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/recyclerView"
-                    android:scrollbars="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </android.support.v7.widget.RecyclerView>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category1"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    />
+                <Button
+                    android:id="@+id/cat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category2"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:id="@+id/cat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category3"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:id="@+id/cat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category4"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:id="@+id/cat5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category5"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:id="@+id/cat6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category6"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+                <Button
+                    android:id="@+id/cat7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/category7"
+                    android:textColor="@color/colorBackground"
+                    android:background="@drawable/btn_background"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
 
             </LinearLayout>
 
-        </android.support.v4.widget.NestedScrollView>
+        </HorizontalScrollView>
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
 
-    <include layout="@layout/error"/>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/topheadelines"
+                        android:textColor="@color/colorTextTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Top Headlines"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/error"/>
+
+
+    </LinearLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
