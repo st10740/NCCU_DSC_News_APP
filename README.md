@@ -8,5 +8,5 @@ We add two functionalities to provide better user experience:
 - Classify by country where the news is broadcast, which can also help people learn language by watching the correspond news.
 
 # Screenshot
-![image info](./scrrenshot.jpg)
+![image info](./screenshot.jpg)
 
